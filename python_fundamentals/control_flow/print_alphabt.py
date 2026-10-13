@@ -3,4 +3,4 @@ alphabet = ""
 for letter in range(ord('a'), ord('z') + 1):
     if letter != ord('e') and letter != ord('q'):
         alphabet += chr(letter)
-print(alphabet)
+print("{}".format(alphabet))
