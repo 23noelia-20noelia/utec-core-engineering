@@ -1,17 +1,13 @@
 #!/usr/bin/env python3
-numero = __import__('random').randint(-10000, 10000) 
-ultimo_digito = abs(numero) % 10 
-
-if numero < 0:
-    ultimo_digito = -ultimo_digito
-
-if ultimo_digito > 5:
-    print("El último dígito de {} es {} y es más grande que 5".format(numero, ultimo_digito))
-
-elif ultimo_digito == 0:
-    print("El último dígito de {} es {} y es 0".format(numero, ultimo_digito))
-
-
+number = __import__('random').randint(-10000, 10000)
+last_digit = abs(number) % 10
+if number < 0:
+    last_digit = -last_digit
+if last_digit > 5:
+    print("Last digit of {} is {} and is greater than 5".format(number, last_digit))
+elif last_digit == 0:
+    print("Last digit of {} is {} and is 0".format(number, last_digit))
 else:
-    print("El último digito de {} es {} es menor que 6 y no es 0".format(numero, ultimo_digito))
+    print("Last digit of {} is {} and is less than 6 and not 0".format(number, last_digit))
+
 
